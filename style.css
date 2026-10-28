@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Fraunces", "Hanken Grotesk", "Red Hat Display", "Red Hat Display", "Inter",
+    sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.product-preview-card {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-image {
+  background-image: url(/images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  padding: 25px;
+  min-width: 250px;
+  min-height: 350px;
+  max-height: 400px;
+}
+
+.product-preview {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  gap: 15px;
+  min-width: 250px;
+}
+
+.product-type {
+  align-self: flex-start;
+  font-family: "Inter";
+  color: hsla(228, 12%, 48%, 0.692);
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.product-info {
+  color: hsla(228, 12%, 48%, 0.692);
+  line-height: 1.5;
+  font-family: "Red Hat Display", "Inter";
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.product-price {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.current-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.previous-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8rem;
+}
+
+.add-btn {
+  text-decoration: none;
+  background-color: hwb(158 24% 50%);
+  color: hsl(0, 0%, 100%);
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: "Hanken Grotesk", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-btn::before {
+  content: " ";
+  background-image: url(images/icon-cart.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+}
