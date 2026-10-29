@@ -99,6 +99,10 @@ body {
   gap: 10px;
 }
 
+.add-btn:hover{
+   background: rgb(35, 107, 60);
+}
+
 .add-btn::before {
   content: " ";
   background-image: url(images/icon-cart.svg);
