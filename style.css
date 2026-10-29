@@ -26,7 +26,7 @@ body {
 }
 
 .product-image {
-  background-image: url(/images/image-product-desktop.jpg);
+  background-image: url(images/image-product-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   flex: 1;
